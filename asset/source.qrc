@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="newSrc">
+    <file>face.jpg</file>
+    <file>loupe.png</file>
+    <file>registration.png</file>
+    <file>user.png</file>
+  </qresource>
+</RCC>

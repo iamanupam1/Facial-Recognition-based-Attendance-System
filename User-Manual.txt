@@ -1,0 +1,32 @@
+*** This is the User Manual for Facial Recognition based Attendance System ***
+Project Developed by: Anupam Dhakal
+Registration Number: 1815430
+
+************************
+Admin Panel
+Uname : admin
+Pass : admin
+******************************************************************************
+Facial Recognition based Attendance System :
+******************************************************************************
+
+1. There are two main user roles: Admin Role and Teacher Role
+2. Firstly, Admin should login into the system with the username and password
+3. Then Admin should add the student by clicking "Add Student" Tab in Admin Panel
+4. Admin Should fill the details of the students 
+5. Then he/she should click on "Open Camera" and collect the image dataset.
+6. At last Admin should click on Submit Form to register student to the system.
+
+For Teacher Panel.
+
+7. Firslty teacher should register into the system by clicking "SignUp" button.
+8. Then he/she should login with valid username and password.
+9. Click on Train System tab and click "Train" button.
+10. System provides a success message on successful training.
+11. Click on Start Attendance Tab
+12. Click on "Start Attendnance" button in that tab.
+13. Student gets identified as registered by the Admin
+14. Attendance gets automatically registered into the "Attendance.csv" file.
+15. Log Out
+
+Enjoy!!! 

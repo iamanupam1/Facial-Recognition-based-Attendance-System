@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminPanel</class>
+ <widget class="QMainWindow" name="AdminPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>874</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(48, 62, 124);
+color:rgb(255, 255, 255);
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>60</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Admin Panel - AMS</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>101</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+border-radius:10px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="btn_viewTeacher">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding:7px;
+background-color: rgb(170, 170, 255);
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>My Teachers</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_addStudent">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding:7px;
+background-color: rgb(170, 170, 255);
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Add Students</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_viewStudent">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding:7px;
+background-color: rgb(170, 170, 255);
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>My Students</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_logout">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>350</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding:7px;
+background-color: rgb(170, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Log Out</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>100</y>
+         <width>721</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 127);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QStackedWidget" name="stackedWidget">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <widget class="QWidget" name="page_1">
+           <widget class="QLabel" name="label_1">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>0</y>
+              <width>111</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Teachers List</string>
+            </property>
+           </widget>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>50</y>
+              <width>521</width>
+              <height>241</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+text-align: center;
+column-width:200px;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="rowCount">
+             <number>1</number>
+            </property>
+            <property name="columnCount">
+             <number>3</number>
+            </property>
+            <row/>
+            <column>
+             <property name="text">
+              <string>Teacher ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Full Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Module</string>
+             </property>
+            </column>
+           </widget>
+           <widget class="QPushButton" name="btn_loadTeacher">
+            <property name="geometry">
+             <rect>
+              <x>284</x>
+              <y>340</y>
+              <width>91</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(170, 255, 255);
+color: rgb(0, 0, 0);
+padding: 10px;
+font-weight: 300;
+border-radius:10px;</string>
+            </property>
+            <property name="text">
+             <string>View Teacher</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_2">
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>290</x>
+              <y>10</y>
+              <width>131</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Add Students</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>60</y>
+              <width>71</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Full Name :</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>120</y>
+              <width>71</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Level :</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_6">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>170</y>
+              <width>71</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Semester :</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_7">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>220</y>
+              <width>121</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Batch (in years) :</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_fullName">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>90</y>
+              <width>170</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 2px solid rgb(170, 170, 127);
+border-bottom-color:black;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Enter Full Name</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_level">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>150</y>
+              <width>170</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 2px solid rgb(170, 170, 127);
+border-bottom-color:black;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Enter Student Level</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_semester">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>200</y>
+              <width>170</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 2px solid rgb(170, 170, 127);
+border-bottom-color:black;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Enter Student Semester</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_batch">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>260</y>
+              <width>170</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 2px solid rgb(170, 170, 127);
+border-bottom-color:black;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Enter Student Batch</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_8">
+            <property name="geometry">
+             <rect>
+              <x>470</x>
+              <y>70</y>
+              <width>81</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Take Image</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_rNo">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>330</y>
+              <width>170</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 2px solid rgb(170, 170, 127);
+border-bottom-color:black;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Enter Registration Number</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>290</y>
+              <width>111</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Registration No:</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_submitForm">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>350</y>
+              <width>151</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgb(0, 85, 0);
+border-radius:10px;</string>
+            </property>
+            <property name="text">
+             <string>Submit Form</string>
+            </property>
+           </widget>
+           <widget class="QFrame" name="frame_4">
+            <property name="geometry">
+             <rect>
+              <x>410</x>
+              <y>100</y>
+              <width>201</width>
+              <height>141</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:3px solid</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_openCamera">
+            <property name="geometry">
+             <rect>
+              <x>470</x>
+              <y>250</y>
+              <width>81</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 85, 127);
+border-radius:10px;
+padding:5px;</string>
+            </property>
+            <property name="text">
+             <string>Open Camera</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="txt_notify">
+            <property name="geometry">
+             <rect>
+              <x>240</x>
+              <y>300</y>
+              <width>271</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="txt_Notification">
+            <property name="geometry">
+             <rect>
+              <x>190</x>
+              <y>50</y>
+              <width>311</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_10">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>40</y>
+              <width>121</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <italic>true</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>* All fields are required</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_3">
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>290</x>
+              <y>0</y>
+              <width>111</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;</string>
+            </property>
+            <property name="text">
+             <string>My Students</string>
+            </property>
+           </widget>
+           <widget class="QTableWidget" name="tableWidget_admin">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>40</y>
+              <width>571</width>
+              <height>271</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="lineWidth">
+             <number>5</number>
+            </property>
+            <property name="midLineWidth">
+             <number>5</number>
+            </property>
+            <column>
+             <property name="text">
+              <string>RegNo</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Full Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Level</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Semester</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Batch</string>
+             </property>
+            </column>
+           </widget>
+           <widget class="QPushButton" name="btn_viewMyStudent">
+            <property name="geometry">
+             <rect>
+              <x>280</x>
+              <y>340</y>
+              <width>131</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+              <weight>37</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(170, 255, 255);
+color: rgb(0, 0, 0);
+padding: 10px;
+font-weight: 300;
+border-radius:10px;</string>
+            </property>
+            <property name="text">
+             <string>View Students</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>931</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(85, 85, 127)</string>
+       </property>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>10</y>
+          <width>431</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Facial Recognition based Attendance System</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_close">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>10</y>
+          <width>51</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+background-color: rgb(255, 0, 0);
+border-radius:10px;</string>
+        </property>
+        <property name="text">
+         <string>Close X</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
